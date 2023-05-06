@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(36, 59, 85);
+}
+
+header nav.nav-person {
+  background-color: rgb(20, 30, 48);
+}
+header nav.nav-person img.logo {
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid rgb(33, 124, 33);
+}
+header nav.nav-person .logo-text {
+  position: relative;
+}
+header nav.nav-person .logo-text p {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  color: rgb(33, 124, 33);
+}
+
+.title-logo {
+  font-size: 3.2rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+i {
+  font-size: 2rem;
+  color: rgb(33, 124, 33);
+}
+
+ul li .nav-link {
+  position: relative;
+  margin-right: 0.3rem;
+}
+ul li .nav-link::before {
+  content: "";
+  background: rgb(33, 124, 33);
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transition: all 0.3s;
+}
+ul li .nav-link:hover::before {
+  width: 100%;
+  left: 0;
+}
+ul li .active {
+  color: rgb(33, 124, 33) !important;
+  font-weight: bold;
+}
+ul li .active::before {
+  width: 100%;
+  left: 0;
+}/*# sourceMappingURL=style.css.map */

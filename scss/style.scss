@@ -1,5 +1,6 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+// VARIABLES
+@import '../partials/variables';
+// RESET
+@import '../partials/reset';
+// HEADER
+@import '../partials/header';

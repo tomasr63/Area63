@@ -1,0 +1,76 @@
+header {
+
+    nav.nav-person {
+        background-color: $main-color;
+        
+        img {
+            
+            &.logo {
+                width: 100px;
+                border-radius: 50%;
+                border: 5px solid $detail-color;
+            }
+        }
+
+        .logo-text {
+            position: relative;
+
+            p {
+                position: absolute;
+                top: 50px;
+                right: 10px;
+                color: $detail-color;
+            }
+        }
+    }
+}
+.title-logo {
+    font-size: 3.2rem;
+    
+    
+}
+.navbar-toggler {
+    border: none;
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+i {
+    font-size: 2rem;
+    color: $detail-color;
+}
+ul {
+    li {
+        .nav-link {
+            position: relative;
+            margin-right: 0.3rem;
+
+            &::before {
+                content: '';
+                background: $detail-color;
+                position: absolute;
+                width: 0;
+                height: 3px;
+                bottom: 0;
+                left: 50%;
+                transition: all .3s;
+            }
+
+            &:hover::before {
+                width: 100%;
+                left: 0;
+            }
+        }
+        
+        .active {
+            color: $detail-color !important;
+            font-weight: bold;
+
+            &::before {
+                width: 100%;
+                left: 0;
+            }
+        }
+    }
+}

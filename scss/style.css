@@ -67,4 +67,31 @@ ul li .active {
 ul li .active::before {
   width: 100%;
   left: 0;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid rgb(33, 124, 33);
+  border-radius: 50%;
+}
+
+.cards-home {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cards-home .card-home {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  border: 2px solid white;
+}
+.cards-home .card-home h1 {
+  background-color: green;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */

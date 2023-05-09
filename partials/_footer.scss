@@ -1,0 +1,53 @@
+footer {
+
+    background-color: $main-color;
+    color: $font-color-secondary;
+    margin-top: 4rem;
+
+    .footer-container {
+
+        .footer-info {
+
+            p {
+                color: white;
+            }
+        }
+
+        .footer-social {
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            ul {
+
+                list-style: none;
+
+                li {
+                    padding: .5rem;
+
+                    a {
+                        .social-icons {
+                            color: $detail-color;
+                            font-size: 1.5rem;
+                        }
+
+                        &:hover {
+                            position: relative;
+                            bottom: 2px;
+                            text-shadow: 0px 8px 0px black;
+                            color: red !important;
+                        }
+
+                        @each $red, $color in $redes-colors {
+                            .bi-#{$red}:hover {
+                                color: $color;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

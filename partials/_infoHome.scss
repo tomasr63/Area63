@@ -1,0 +1,32 @@
+.info-home {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    @include tablet {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    .envios, .pagos, .seguridad {
+        width: 300px;
+        text-align: center;
+        padding: .5rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        img {
+            width: 200px;
+            height: 100px;
+        }
+
+        h3 {
+            width: 100%;
+            color: $font-color-secondary;
+        }
+    }
+}

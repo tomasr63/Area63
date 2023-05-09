@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+*::selection {
+    background-color: $selection-bg;
+    color: $selection-color;
+}
+
 // BODY
 body {
     background-color: $second-color;

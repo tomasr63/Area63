@@ -1,22 +1,89 @@
-.cards-home {
-    margin: 3rem 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    .card-home {
-        display: flex;
-        align-items: center;
-        width: 300px;
-        height: 300px;
-        border: 2px solid white;
+.destacados {
+    
+    article {
 
         h1 {
-            background-color: green;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 2rem;
+            color: $font-color-primary;
+            font-weight: 600;
+            margin: 2rem;
+        }
+
+        h2 {
+            margin: 2rem;
+            color: $detail-color;
+            text-decoration: underline;
+        }
+    }
+
+    .cards-home-container {
+        margin: 3rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        @include tablet {
+            flex-direction: column;
+            row-gap: 3rem;
+        }
+
+        .card-home {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 20px 20px black;
+
+            .front,
+            .back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                transition: all .6s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    object-fit: cover;
+                    border-radius: 5px;
+                }
+            }
+
+            .front {
+                transform: perspective(600px) rotateY(0deg);
+                overflow: hidden;
+
+                p {
+                    text-align: center;
+                    width: 150%;
+                    font-size: 2rem;
+                    font-weight: bold;
+                    color: $detail-color;
+                    text-shadow: 0 0 4px rgb(0, 0, 0);
+                    background-color: $second-color-op;
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%) rotateZ(-30deg);
+
+                }
+            }
+
+            .back {
+                transform: perspective(600px) rotateY(180deg);
+            }
+        }
+
+        .card-home:hover {
+            & .front {
+                transform: perspective(600px) rotateY(180deg);
+            }
+
+            & .back {
+                transform: perspective(600px) rotateY(360deg);
+            }
         }
     }
 }

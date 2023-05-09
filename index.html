@@ -58,47 +58,108 @@
         <section class="container">
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                  <div class="carousel-item active" data-bs-interval="2000">
-                    <img src="./images/slide-img1.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./images/slide-img2.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./images/slide-img3.jpg" class="d-block w-100" alt="...">
-                  </div>
-                  <div class="carousel-item" data-bs-interval="2000">
-                    <img src="./images/slide-img4.jpg" class="d-block w-100" alt="...">
-                  </div>
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./images/slide-img1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slide-img2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slide-img3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slide-img4.jpg" class="d-block w-100" alt="...">
+                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
                 </button>
-              </div>
+            </div>
         </section>
+
         <!-- CARDS HOME -->
-        <section class="container">
-            <div class="cards-home container-fluid">
+        <section class="container-fluid destacados">
+            <article class="container">
+                <h1>Area 63 Skateboards.</h1>
+                <h2>Destacados:</h2>
+            </article>
+            <article class="container cards-home-container">
                 <div class="card-home">
-                    <h1>TABLAS</h1>
+                    <div class="front">
+                        <img src="./images/tabla1.jpg" alt="skate table">
+                        <p>TABLAS</p>
+                    </div>
+                    <a href="./pages/productos.html">
+                        <div class="back">
+                            <img src="./images/tabla1.jpg" alt="skate table">
+                        </div>
+                    </a>
                 </div>
                 <div class="card-home">
-                    <h1>ACCESORIOS</h1>
+                    <div class="front">
+                        <img src="./images/indumentaria.jpg" alt="skate table">
+                        <p>INDUMENTARIA</p>
+                    </div>
+                    <a href="./pages/productos.html">
+                        <div class="back">
+                            <img src="./images/indumentaria.jpg" alt="skate table">
+                        </div>
+                    </a>
                 </div>
                 <div class="card-home">
-                    <h1>INDUMENTARIA</h1>
+                    <div class="front">
+                        <img src="./images/accesorios.jpg" alt="skate table">
+                        <p>ACCESORIOS</p>
+                    </div>
+                    <a href="./pages/productos.html">
+                        <div class="back">
+                            <img src="./images/accesorios.jpg" alt="skate table">
+                        </div>
+                    </a>
                 </div>
+            </article>
+        </section>
+
+        <!-- ENVIO/PAGOS/SEGURIDAD -->
+        <!-- INFO HOME -->
+        <section class="container info-home">
+            <div class="envios">
+                <img src="./images/truck.svg" alt="delivery truck">
+                <h3>Envios a todo el pais.</h3>
+            </div>
+            <div class="pagos">
+                <img src="./images/bank-card.svg" alt="bacnk card">
+                <h3>Cualquier metodo de pago.</h3>
+            </div>
+            <div class="seguridad">
+                <img src="./images/padlock.svg" alt="padlock">
+                <h3>Compra 100% protegida.</h3>
             </div>
         </section>
     </main>
 
     <footer>
-
+        <div class="container-fuid d-flex flex-row justify-content-between align-items-center footer-container">
+          <div class="footer-info ms-4">
+            <p>&copy; Desarrolado por Tomás.
+          </div>
+          <div class="footer-social d-flex justify-content-around align-items-center me-4">
+            <h1>Social:</h1>
+            <ul class="d-flex mt-2 social-list">
+              <li><a href="#"><i class="social-icons bi bi-github"></i></a></li>
+              <li><a href="#"><i class="social-icons bi bi-instagram"></i></a></li>
+              <li><a href="#"><i class="social-icons bi bi-twitter"></i></a></li>
+              <li><a href="#"><i class="social-icons bi bi-whatsapp"></i></a></li>
+            </ul>
+          </div>
+        </div>
     </footer>
 
     <!-- BOOTSTRAP  JS-->

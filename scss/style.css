@@ -21,6 +21,11 @@ body {
 header nav.nav-person {
   background-color: rgb(20, 30, 48);
 }
+@media screen and (max-width: 768px) {
+  header nav.nav-person div .nav-list {
+    margin-right: 0 !important;
+  }
+}
 header nav.nav-person img.logo {
   width: 100px;
   border-radius: 50%;
@@ -89,7 +94,7 @@ ul li .active::before {
 }
 
 .destacados article h1 {
-  color: rgb(0, 0, 0);
+  color: rgb(0, 89, 161);
   font-weight: 600;
   margin: 2rem;
 }
@@ -109,7 +114,7 @@ ul li .active::before {
 @media screen and (max-width: 992px) {
   .destacados .cards-home-container {
     flex-direction: column;
-    row-gap: 3rem;
+    gap: 3rem;
   }
 }
 .destacados .cards-home-container .card-home {
@@ -117,6 +122,13 @@ ul li .active::before {
   width: 300px;
   height: 300px;
   box-shadow: 0 20px 20px black;
+}
+@media screen and (max-width: 992px) {
+  .destacados .cards-home-container .card-home {
+    min-width: 300px;
+    max-width: 550px;
+    width: 100%;
+  }
 }
 .destacados .cards-home-container .card-home .front,
 .destacados .cards-home-container .card-home .back {
@@ -142,7 +154,7 @@ ul li .active::before {
 .destacados .cards-home-container .card-home .front p {
   text-align: center;
   width: 150%;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: rgb(33, 124, 33);
   text-shadow: 0 0 4px rgb(0, 0, 0);
@@ -170,7 +182,7 @@ ul li .active::before {
   flex-wrap: wrap;
   gap: 1rem;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   .info-home {
     flex-direction: column;
     row-gap: 3rem;
@@ -178,11 +190,14 @@ ul li .active::before {
 }
 .info-home .envios, .info-home .pagos, .info-home .seguridad {
   width: 300px;
+  height: 200px;
   text-align: center;
   padding: 0.5rem;
   display: flex;
   align-items: center;
   flex-direction: column;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 .info-home .envios img, .info-home .pagos img, .info-home .seguridad img {
   width: 200px;
@@ -197,6 +212,17 @@ footer {
   background-color: rgb(20, 30, 48);
   color: rgb(255, 255, 255);
   margin-top: 4rem;
+}
+@media screen and (max-width: 576px) {
+  footer .footer-container {
+    flex-direction: column-reverse !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+  footer .footer-container .footer-info {
+    margin-left: 0 !important;
+  }
 }
 footer .footer-container .footer-info p {
   color: white;
@@ -231,4 +257,9 @@ footer .footer-container .footer-social ul li a .bi-whatsapp:hover {
 }
 footer .footer-container .footer-social ul li a .bi-github:hover {
   color: #cecece;
+}
+@media screen and (max-width: 576px) {
+  footer .footer-container .footer-social {
+    margin: 0 !important;
+  }
 }/*# sourceMappingURL=style.css.map */

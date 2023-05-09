@@ -2,6 +2,14 @@ header {
 
     nav.nav-person {
         background-color: $main-color;
+
+        div {
+            .nav-list {
+                @include tablet {
+                    margin-right: 0 !important;
+                }
+            }
+        }
         
         img {
             

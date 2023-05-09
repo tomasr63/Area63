@@ -13,11 +13,14 @@
 
     .envios, .pagos, .seguridad {
         width: 300px;
+        height: 200px;
         text-align: center;
         padding: .5rem;
         display: flex;
         align-items: center;
         flex-direction: column;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
 
         img {
             width: 200px;

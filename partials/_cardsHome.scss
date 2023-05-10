@@ -1,6 +1,9 @@
 .destacados {
     
-    article {
+    .text-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         h1 {
             color: $font-color-special;
@@ -12,7 +15,13 @@
             margin: 2rem;
             color: $detail-color;
             text-decoration: underline;
+            align-self: flex-start;
+
+            @include desktop {
+                align-self: center;
+            }
         }
+
     }
 
     .cards-home-container {

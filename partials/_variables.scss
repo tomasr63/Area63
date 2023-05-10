@@ -6,6 +6,7 @@ $font-color-primary: rgb(0, 0, 0);
 $font-color-secondary: rgb(255, 255, 255);
 $font-color-special: rgb(0, 89, 161);
 $detail-color: rgb(33, 124, 33);
+$detail-color-op: rgba(33, 124, 33, 0.5);
 $selection-color: rgb(17, 39, 17);
 $selection-bg: rgb(0, 180, 180);
 $instagram-color: #d92e7f;
@@ -21,6 +22,8 @@ $redes-colors: (
     github: $git-color
 );
 
-// background: #141E30;
-// background: -webkit-linear-gradient(to right, #243B55, #141E30);
-// background: linear-gradient(to right, #243B55, #141E30);
+// FUENTES
+
+$font-logo: 'Bruno Ace SC', cursive;
+$font-hs: 'Bebas Neue', sans-serif;
+$font-text: 'Space Grotesk', sans-serif;

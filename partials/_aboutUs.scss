@@ -8,14 +8,31 @@
 
     h1 {
         display: inline-block;
+        margin-bottom: 4rem;
         padding: 1rem;
         transform: skew(-10deg);
         text-align: center;
         color: $font-color-primary;
         background: $detail-color;
-        margin-bottom: 4rem;
-        text-shadow:  3px 3px 3px $font-color-secondary, 3px 3px 3px $font-color-secondary;
+        text-shadow: 3px 3px 3px $font-color-secondary, 3px 3px 3px $font-color-secondary;
         border-radius: 10px 0px 10px 0px;
+
+    }
+
+    .first-paragraph {
+        width: 100%;
+        margin-bottom: 4rem;
+
+        p {
+            font-size: 2rem;
+            text-align: center;
+            color: $font-color-secondary;
+
+            .diferent-text {
+                background: $detail-color;
+                text-shadow: 3px 3px 3px black;
+            }
+        }
     }
 
     .about-description {
@@ -42,16 +59,23 @@
             color: $font-color-secondary;
             font-size: 1.5rem;
             max-width: 400px;
-    
+
             @include tablet {
                 text-align: center;
             }
         }
 
-        &.uno, &.tres {
+        &.uno,
+        &.tres {
             @include tablet {
                 flex-direction: column;
                 row-gap: 2rem;
+            }
+        }
+
+        &.tres {
+            @include tablet {
+                margin-bottom: 0;
             }
         }
 
@@ -63,18 +87,5 @@
         }
     }
 
-    .last-paragraph {
-        width: 100%;
 
-        p {
-            font-size: 2rem;
-            text-align: center;
-            color: $font-color-secondary;
-
-            .diferent-text {
-                background: $detail-color;
-                text-shadow: 3px 3px 3px black;
-            }
-        }
-    }
 }

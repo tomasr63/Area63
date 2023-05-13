@@ -109,9 +109,11 @@
                 transition: all .5s;
                 overflow: hidden;
 
-                @include tablet {
+
+                @include desktop {
                     height: 50px;
                 }
+
             }
 
             .produc-title {
@@ -123,7 +125,7 @@
                 color: $font-color-secondary;
                 transition: all 1s;
 
-                @include tablet {
+                @include desktop {
                     background: $detail-color;
                     color: $font-color-primary;
                     transform: skew(-7deg);

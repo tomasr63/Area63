@@ -106,6 +106,27 @@ header .nav-person div .nav-list ul li .active::before {
   width: 100%;
   left: 0;
 }
+@media screen and (max-width: 768px) {
+  header .nav-person div .nav-list ul li.dropdown ul {
+    margin-left: 2rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav-person div .nav-list ul li.dropdown ul li a {
+    margin: 0 !important;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .nav-person div .nav-list ul li.dropdown ul {
+    left: -35px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav-person div .nav-list ul li.dropdown ul {
+    left: 0;
+  }
+}
 @media screen and (max-width: 992px) {
   header .nav-person div .nav-list {
     margin-right: 0 !important;
@@ -118,6 +139,9 @@ header .nav-person div .nav-list ul li .active::before {
   border-radius: 50%;
 }
 
+.destacados {
+  overflow: hidden;
+}
 .destacados .text-home {
   display: flex;
   flex-direction: column;
@@ -224,6 +248,7 @@ header .nav-person div .nav-list ul li .active::before {
   .info-e-p-s {
     flex-direction: column;
     row-gap: 3rem;
+    width: 100%;
   }
 }
 .info-e-p-s .envios, .info-e-p-s .pagos, .info-e-p-s .seguridad {
@@ -247,6 +272,7 @@ header .nav-person div .nav-list ul li .active::before {
 }
 
 .about-description-container {
+  overflow: hidden;
   width: 100%;
   padding: 3rem;
   display: flex;
@@ -518,7 +544,7 @@ header .nav-person div .nav-list ul li .active::before {
   transition: all 0.5s;
   overflow: hidden;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .productos .cards-container .card .producto-info {
     height: 50px;
   }
@@ -532,7 +558,7 @@ header .nav-person div .nav-list ul li .active::before {
   color: rgb(255, 255, 255);
   transition: all 1s;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .productos .cards-container .card .produc-title {
     background: rgb(33, 124, 33);
     color: rgb(0, 0, 0);
@@ -555,11 +581,12 @@ header .nav-person div .nav-list ul li .active::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .all-products .cat-title {
   width: 100%;
   padding: 1rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: rgb(0, 0, 0);
   background: rgba(20, 30, 48, 0.3);
   margin: 2rem 0;
@@ -586,7 +613,7 @@ header .nav-person div .nav-list ul li .active::before {
   width: 500px;
   height: 300px;
 }
-.all-products .categoria .producto {
+.all-products .categoria a.producto {
   position: relative;
   width: 20%;
   display: flex;
@@ -599,22 +626,32 @@ header .nav-person div .nav-list ul li .active::before {
   margin: 1rem;
 }
 @media screen and (max-width: 768px) {
-  .all-products .categoria .producto {
+  .all-products .categoria a.producto {
     width: 100%;
     height: 200px;
     margin: 10px 0;
   }
 }
-.all-products .categoria .producto img {
+.all-products .categoria a.producto img {
   width: 100%;
   transition: all 0.3s;
 }
 @media screen and (max-width: 768px) {
-  .all-products .categoria .producto img.img-rot {
+  .all-products .categoria a.producto img.img-rot {
     transform: rotateZ(90deg);
   }
 }
-.all-products .categoria .producto h3 {
+@media screen and (max-width: 768px) {
+  .all-products .categoria a.producto img.img-no-transform {
+    transform: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .all-products .categoria a.producto img {
+    transform: translateY(40px);
+  }
+}
+.all-products .categoria a.producto h3 {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -625,14 +662,14 @@ header .nav-person div .nav-list ul li .active::before {
   height: 40px;
   margin-bottom: 0;
 }
-.all-products .categoria .producto:hover {
+.all-products .categoria a.producto:hover {
   cursor: pointer;
 }
-.all-products .categoria .producto:hover img {
+.all-products .categoria a.producto:hover img {
   transform: scale(1.1) rotateZ(-2deg);
 }
 @media screen and (max-width: 768px) {
-  .all-products .categoria .producto:hover img.img-rot {
+  .all-products .categoria a.producto:hover img.img-rot {
     transform: scale(1.1) rotateZ(88deg);
   }
 }

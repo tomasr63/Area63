@@ -84,6 +84,33 @@ header {
                                 left: 0;
                             }
                         }
+
+                        &.dropdown {
+
+                            ul {
+
+                                @include tablet {
+                                    margin-left: 2rem;
+                                }
+
+                                li {
+                                    a {
+                                        @include tablet {
+                                            margin: 0 !important;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+
+                                @include desktop {
+                                    left: -35px;
+                                }
+
+                                @include tablet {
+                                    left: 0;
+                                }
+                            }
+                        }
                     }
                 }
 

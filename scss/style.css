@@ -319,16 +319,20 @@ header .nav-person div .nav-list ul li .active::before {
   }
 }
 .about-description-container .about-description img {
-  max-width: 400px;
+  max-width: 500px;
   min-width: 300px;
-  width: 100%;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgb(33, 124, 33);
 }
 .about-description-container .about-description p {
   color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  max-width: 400px;
+  font-size: 2.4rem;
+  max-width: 700px;
+}
+@media screen and (max-width: 1200px) {
+  .about-description-container .about-description p {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .about-description-container .about-description p {
@@ -353,9 +357,6 @@ header .nav-person div .nav-list ul li .active::before {
   }
 }
 
-.contact-container {
-  position: relative;
-}
 .contact-container .hero-contact {
   text-align: center;
   color: rgb(255, 255, 255);
@@ -376,14 +377,18 @@ header .nav-person div .nav-list ul li .active::before {
   background: rgba(33, 124, 33, 0.5);
   padding: 0.2rem;
 }
+@media screen and (max-width: 576px) {
+  .contact-container .hero-contact .img-container {
+    padding: 0 1rem;
+  }
+}
 .contact-container .form-container {
+  margin-top: 4rem;
   max-width: 1000px;
   padding: 2rem;
   color: white;
   border: 3px solid rgb(33, 124, 33);
   border-radius: 10px;
-  position: relative;
-  top: -60px;
   background: rgba(255, 255, 255, 0.2);
 }
 @media screen and (max-width: 768px) {
@@ -391,6 +396,12 @@ header .nav-person div .nav-list ul li .active::before {
     position: static;
     margin-top: 2rem;
     text-align: center;
+  }
+}
+@media screen and (max-width: 992px) {
+  .contact-container .form-container {
+    width: 80%;
+    margin: 2rem auto;
   }
 }
 .contact-container .form-container div .form-inputs-container {

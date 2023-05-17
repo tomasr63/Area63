@@ -1,5 +1,4 @@
 .contact-container {
-    position: relative;
     
     .hero-contact {
         text-align: center;
@@ -25,23 +24,33 @@
                 background: $detail-color-op;
                 padding: .2rem;
             }
+            
+            @include mobile {
+                padding: 0 1rem;
+            }
         }
     }
 
+
+
     .form-container {
+        margin-top: 4rem;
         max-width: 1000px;
         padding: 2rem;
         color: white;
         border: 3px solid $detail-color;
         border-radius: 10px;
-        position: relative;
-        top: -60px;
         background: rgba(255, 255, 255, 0.2);
 
         @include tablet {
             position: static;
             margin-top: 2rem;
             text-align: center;
+        }
+
+        @include desktop {
+            width: 80%;
+            margin: 2rem auto;
         }
 
         div {
